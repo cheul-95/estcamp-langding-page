@@ -147,7 +147,7 @@
     box-shadow: 0px 0px 30px 0px #00000033;
     border: none;
     color: #D97652;
-    background: url("../img/ae4d1779068c31426dd3beed83e84d2f28962f4b.png") no-repeat center center / cover;
+    background: url("../img/modal_background.png") no-repeat center center / cover;
 }
 .modal__inner{
     margin: 60px 109px 40px  108px;
@@ -203,7 +203,7 @@
     cursor: pointer;
 }
 .top_btn:hover{
-    background: url("../img/scroll-top-btn\ \(1\).png");
+    background: url("../img/scroll-top-btn_2.png");
 }
 /* 메인시작 */
 section{
