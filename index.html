@@ -13,33 +13,66 @@
     </head>
     <body>
     <header class="header">
-        <a href="./" aria-label="호두 랜딩 페이지 메인으로 이동">
+        <div class="header__inner">
             <h1 class="header__logo">
-                <img src="./img/Logo-fin.svg" alt="호두 로고" />
+                <a href="./" aria-label="호두 랜딩 페이지 메인으로 이동">
+                    <picture>
+                        <source media="(min-width:720px)" srcset="./img/Logo-fin.svg">
+                        <img src="./img/Group.png" alt="HODU 로고">
+                    </picture>
+                </a>
             </h1>
-        </a>
-        <nav class="header__nav" aria-label="메인 메뉴">
-            <ul class="header__menu">
-                <li><a href="#home" aria-label="호두 랜딩 페이지로 이동" >Home</a></li>
-                <li><a href="#about" aria-label="호두 관한 페이지로 이동">About</a></li>
-                <li><a href="#support" aria-label="호두 지원 페이지로 이동">Support</a></li>
-            </ul>
-        </nav>
-        <button type="button" class="header__btn--download" aria-label="다운로드 버튼">Download</button>
+            <div class="header__nav-wrapper">
+                <nav class="header__nav" aria-label="메인 메뉴">
+                    <ul class="header__menu ">
+                        <li class="header__menu-item"><a href="#home" aria-label="호두 랜딩 페이지로 이동" >Home</a></li>
+                        <li class="header__menu-item"><a href="#about" aria-label="호두 관한 페이지로 이동">About</a></li>
+                        <li class="header__menu-item"><a href="#support" aria-label="호두 지원 페이지로 이동">Support</a></li>
+                    </ul>
+                </nav>
+                <a href="./file.pdf" class="header__btn--download" aria-label="파일 다운로드" download>Download</a>
+            </div>
+            <div class="mobile-toggle">
+                <label for="menu-toggle" class="menu-icon" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="mobile__nav-wrapper" >
+                    <button type="button" class="header-mobile__btn--close" ><img  src="./img/arrow-right.svg" alt="모바일 메뉴 닫기" ></button>
+                    <nav class="mobile__nav">
+                        <ul>
+                            <li class=" header__menu-item--mobile"><a href="#home" aria-label="호두 랜딩 페이지로 이동">Home</a></li>
+                            <li class=" header__menu-item--mobile"><a href="#about"aria-label="호두 관한 페이지로 이동">About</a></li>
+                            <li class=" header__menu-item--mobile"><a href="#support" aria-label="호두 지원 페이지로 이동">Support</a></li>
+                            <li class=" header__menu-item--mobile"><a href="./file.pdf" aria-label="파일 다운로드" class="mobile-header__btn--download" download >Download</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
-    <main class="main">
+    <main class="main" id="home">
         <section class="banner">
-            <h2 class="sr-only">호두 랜딩 페이지 배너</h2>
-            <div  class="banner__content">
-                <p class="banner__title" >Lorem Ipsum is simply dummy text of the printing and</p>
-                <p class="banner__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown</p>
-                <button type="button" class="banner__btn banner__btn--download" aria-label="다운로드 버튼">Download</button>
-                <img src="./img/img_cat_png.png" alt="박스 쓴 호두 사진" >
+            <div class="banner__wrap">
+                <h2 class="sr-only">호두 랜딩 페이지 배너</h2>
+                <div  class="banner__content">
+                    <p class="banner__title text-multiline">Lorem Ipsum is simply
+                        dummy text of the printing and
+                    </p>
+                    <p class="banner__desc text-multiline">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown</p>
+                    <a href="./file.pdf" class="banner__btn banner__btn--download" aria-label="다운로드 버튼" download>Download</a>
+                </div>
+                <picture>
+                    <source media="(min-width:720px)" srcset="./img/img_cat_png.png">
+                    <img src="./img/b3e037fce32e4da5bfb429b754bbe49acd72e8f2.png" alt="박스 쓴 호두 사진">
+                </picture>
             </div>
         </section>
-        <section class="content">
+        <section class="content" id="about">
             <h2 class="sr-only">호두 사진</h2>
-            <div class="content__item">
+            <div class="content__wrap">
                 <img src="./img/img_4.png" alt="침대 위 호두 사진">
                 <div class="content__text">
                     <p class="content__title" >Lorem Ipsum is simply dummy text of the printing and dummy text</p>
@@ -47,51 +80,105 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
-            <h2 class="gallery__title">dummy text of the printing and dummy</h2>
-            <p class="gallery__desc">Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-            <div class="gallery__grid">
-                <div class="gallery__card">
-                    <img src="./img/img_1.png" alt="캣타워  호두사진" class="gallery__image" >
+        <section class="gallery" id="support">
+            <div class="gallery__wrap">
+                <h2 class="gallery__title">dummy text of the printing and dummy</h2>
+                <p class="gallery__desc text-multiline">Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                </p>
+                <div class="gallery__cards-wrap">
+                    <ul  class="gallery__cards">
+                        <li  class="gallery__card">
+                            <figure>
+                                <img src="./img/img_1.png" alt="캣타워 호두사진" class="gallery__image" >
+                            </figure>
+                        </li>
+                        <li  class="gallery__card">
+                            <figure>
+                                <img src="./img/img_2.png" alt="후면 호두사진" class="gallery__image">
+                            </figure>
+                        </li>
+                        <li  class="gallery__card">
+                            <figure>
+                                <img src="./img/img_3.png" alt="정면 호두사진" class="gallery__image">
+                            </figure>
+                        </li>
+                    </ul>
                 </div>
-                <div class="gallery__card">
-                    <img src="./img/img_2.png" alt="후면 호두사진" class="gallery__image">
+                <div class="gallery__text">
+                    <p  class="gallery__content text-multiline">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <a href="./#상세페이지" class="gallery__btn gallery__btn--more" aria-label="더보기 버튼">Learn More</a>
                 </div>
-                <div class="gallery__card">
-                    <img src="./img/img_3.png" alt="정면 호두사진" class="gallery__image">
-                </div>
-            </div>
-            <div class="gallery__text">
-                <p  class="gallery__content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown<br>Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                <button type="button" class="gallery__btn gallery__btn--more" aria-label="더보기 버튼">Learn More</button>
             </div>
         </section>
-        <section class="image">
+        <section class="subscribe" aria-label="구독 유도 배너">
+            <div class="subscribe__wrap">
+                <div class="subscribe__text">
+                    <p class="subscribe__title" >Subscribe to our Blog post</p>
+                    <p class="subscribe__desc text-multiline">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text </p>
+                </div>
+                <form  action="/"  class="subscribe__form">
+                    <fieldset>
+                        <legend class="sr-only">이메일 구독 폼</legend>
+                        <img src="./img/mail.svg" alt="이메일 아이콘">
+                        <label for="newsletter-email" class="sr-only">이메일 주소</label>
+                        <input class="subscribe__email" type="email" name="newsletter" id="newsletter-email" placeholder="Enter your e-mail address"  required>
+                        <button class="subscribe__btn--subscribe" type="submit">Subscribe</button>
+                    </fieldset>
+                </form>
+            </div>
             <h2 class="sr-only">호두  백그라운드 사진</h2>
+            <div class="image"></div>
         </section>
     </main>
-    <footer>
-        <a href="./" aria-label="호두 랜딩 페이지 메인으로 이동">
-            <img src="./img/Logo-fin.svg" alt="호두 로고" />
-        </a>
-        <ul class="sns__list">
-            <li><a href="#" aria-label="호두 블로그 페이지로 이동"><img src="./img/icon-blog.png" alt="블로그 아이콘"></a></li>
-            <li><a href="#" aria-label="호두 인스타그램 페이지로 이동" ><img src="./img/icon-insta.png" alt="인스타 아이콘"></a></li>
-            <li><a href="#" aria-label="호두 관한 페이지로 이동"><img src="./img/icon-facebook.png" alt="페이스북 아이콘"></a></li>
-            <li><a href="#" aria-label="호두 지원 페이지로 이동"><img src="./img/icon-youtube.png" alt="유튜브 아이콘"></a></li>
-        </ul>
+    <footer class="footer">
+        <div class="footer__wrap">
+            <a href="./" aria-label="호두 랜딩 페이지 메인으로 이동">
+                <picture>
+                    <source media="(min-width:720px)" srcset="./img/Logo-fin.png">
+                    <img class="footer__logo" src="./img/Logo-fin (1).svg" alt="호두 로고">
+                </picture>
+            </a>
+            <nav class="footer__nav" aria-label="푸터 메뉴">
+                <ul class="footer__menu">
+                    <li><a href="#about" aria-label="호두 관한 페이지로 이동">About</a></li>
+                    <li><a href="#" aria-label="호두 블로그 페이지로 이동" >Blog</a></li>
+                    <li><a href="#support" aria-label="호두 지원 페이지로 이동" >Support</a></li>
+                    <li><a href="#" aria-label="호두 이용관약 페이지로 이동" >Terms of Use</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__sns" aria-label="SNS 링크">
+                <ul class="sns__list">
+                    <li><a href="#" aria-label="호두 블로그 페이지로 이동"><img src="./img/icon-blog.png" alt="블로그 아이콘"></a></li>
+                    <li><a href="#" aria-label="호두 인스타그램 페이지로 이동" ><img src="./img/icon-insta.png" alt="인스타 아이콘"></a></li>
+                    <li><a href="#" aria-label="호두 페이스북 페이지로 이동"><img src="./img/icon-facebook.png" alt="페이스북 아이콘"></a></li>
+                    <li><a href="#" aria-label="호두 유튜브 페이지로 이동"><img src="./img/icon-youtube.png" alt="유튜브 아이콘"></a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
-    <button type="button" class="top-btn" aria-label="맨 위로 이동">
-        <span aria-hidden="true">▲</span>
-        <span class="sr-only">맨 위로 이동</span>
-    </button>
-    <div class="floating-banner" role="complementary" aria-label="구독 유도 배너">
-        <p>뉴스레터를 구독하고 소식을 받아보세요!</p>
-        <form >
-            <label for="newsletter-email" class="sr-only">이메일 주소</label>
-            <input type="email" name="newsletter" id="newsletter-email" placeholder="이메일 입력"  required />
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
+    <button type="button" class="top_btn" aria-label="맨 위로 이동"></button>
+    <dialog class="modal" aria-labelledby="modal-title" aria-describedby="modal-desc">
+        <div class="modal__inner">
+            <h2 id="modal-title" class="modal__title sr-only">땡큐 모달창</h2>
+            <picture>
+                <source media="(min-width:720px)" srcset="./img/cat 1.png">
+                <img src="./img/cat 1 (1).png" alt="호두 얼굴">
+            </picture>
+            <span>Thank you!</span>
+            <p id="modal-desc">Lorem Ipsum is simply dummy text of the printing industry. </p>
+            <button type="button" aria-label="호두 좋아요 버튼">OK! I Lover HODU</button>
+        </div>
+    </dialog>
     </body>
 </html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector(".mobile-toggle").addEventListener("click",function () {
+                document.querySelector(".mobile__nav-wrapper").classList.toggle("open");
+        });
+    });
+</script>
