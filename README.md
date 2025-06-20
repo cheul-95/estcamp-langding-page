@@ -60,9 +60,9 @@ start index.html
 
 ```markdown
 PC 화면
-![호두 미리보기](./img/landign-pc.png.png)
+![호두 미리보기](./img/landign-pc.png)
 모바일 화면
-![호두 미리보기](./img/landign-mo.png.png)
+![호두 미리보기](./img/landign-mo.png)
 ```
 
 ## 🙋‍♀️ 제작자

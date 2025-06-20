@@ -460,6 +460,11 @@ footer{
     width: 1400px;
     padding: 0 60px;
 }
+.footer__left{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .footer__menu{
     display: none;
 }
@@ -494,6 +499,7 @@ footer{
     .content__desc {
         margin-top: 20px;
     }
+  
 
 }
 /* 헤더 모바일 전환점 */
@@ -646,6 +652,10 @@ footer{
         "logo menu"
         "sns  menu";
         grid-template-columns: auto 1fr;
+        grid-template-rows: auto 2fr;
+    }
+    .footer__left{
+        display: block;
     }
     .footer__wrap .footer__logo {
         grid-area: logo;
@@ -655,9 +665,8 @@ footer{
         display: flex;
         flex-direction: column;
         grid-area: menu;
-        height: 120px;
         justify-content: end;
-        align-items: end;
+        align-items: flex-end;
         gap : 16px;
         font-family: 'SpoqaHanSansNeo-Regular' ,sans-serif;
         font-weight: 400;
