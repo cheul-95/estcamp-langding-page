@@ -8,7 +8,6 @@
 
 👉 [호두 랜딩 페이지 바로가기](https://cheul-95.github.io/estcamp-langding-page/)
 
-
 ---
 
 ## 🛠️ 사용 기술
@@ -23,13 +22,13 @@
 
 ```
 estcamp-langding-page/
-├── index.html
 ├── css/
-│   ├── reset.css
-│   └── style.css
-├── img/              # 이미지 리소스
-├── file.pdf          # 다운로드 문서
-└── README.md
+│ ├── reset.css # 브라우저 스타일 초기화
+│ └── style.css # 페이지 스타일 정의
+├── img/ # 모든 이미지 리소스
+├── file.pdf # 다운로드용 문서 파일
+├── index.html # 메인 HTML 페이지
+└── README.md # 프로젝트 설명 문서
 ```
 
 ---
@@ -47,23 +46,37 @@ start index.html
 
 ---
 
-## 📷 미리보기
+## 🖼️ 미리보기
 
-```markdown
-PC 화면
-![호두 미리보기](./img/landign-pc.png)
-모바일 화면
-![호두 미리보기](./img/landign-mo.png)
-```
+### 💻 데스크탑 화면
+![Desktop View](./img/landing-pc.png)
+
+### 📱 모바일 화면
+![Mobile View](./img/landing-mo.png)
+
 ---
 
 ## 📌 주요 특징
 
-- ✅ **반응형 디자인** : 모바일/데스크탑 최적화
-- ✅ **시맨틱 마크업** 과 접근성 고려
-- ✅ **PDF 다운로드** 및 이메일 구독 폼 포함
-- ✅ **순수 HTML + CSS + 간단한 JS만 사용** 
-- ✅ **모바일 메뉴 토글** 및 **다이얼로그(모달) 기능**
+📌 주요 특징
+✅ 순수 HTML + CSS + JS 기반의 정적 웹사이트
+✅ 모바일 메뉴 토글 및 다이얼로그(모달) 기능
+✅ 반응형 디자인
+  Desktop: max-width: 1320px
+  Tablet: max-width: 1023px
+  Mobile: max-width: 768px
+  picture 및 source 태그를 활용한 이미지 최적화
+✅ 시맨틱 마크업
+  header, main, footer 구조 사용
+  각 섹션 제목에 h2 태그 활용
+✅ 접근성 향상 요소
+  fieldset, legend, label, aria-label, alt,aria-hidden 등을 적절히 활용
+✅ 검색엔진 최적화(SEO)
+  meta 태그: description, keywords, author 설정
+  향후 Open Graph 및 SNS 메타 태그 추가 예정
+✅ CSS 네이밍 방식
+  BEM(Block Element Modifier) 방식 적용
+  유지보수성과 코드 가독성 개선 
 ---
 ## 🙋‍♀️ 제작자
 
