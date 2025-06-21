@@ -17,7 +17,7 @@
             <h1 class="header__logo">
                 <a href="./" aria-label="호두 랜딩 페이지 메인으로 이동">
                     <picture>
-                        <source media="(min-width:720px)" srcset="./img/Logo-fin.svg">
+                        <source media="(min-width:768px)" srcset="./img/Logo-fin.svg">
                         <img src="./img/Group.png" alt="HODU">
                     </picture>
                 </a>
@@ -26,7 +26,7 @@
                 <nav class="header__nav" aria-label="메인 메뉴">
                     <ul class="header__menu ">
                         <li class="header__menu-item"><a href="#home" aria-label="호두 랜딩 페이지로 이동" >Home</a></li>
-                        <li class="header__menu-item"><a href="#about" aria-label="호두 관한 페이지로 이동">About</a></li>
+                        <li class="header__menu-item"><a href="#about" aria-label="호두에 관한 페이지로 이동">About</a></li>
                         <li class="header__menu-item"><a href="#support" aria-label="호두 지원 페이지로 이동">Support</a></li>
                     </ul>
                 </nav>
@@ -39,13 +39,13 @@
                     <span></span>
                 </button>
                 <div class="mobile__nav-wrapper" >
-                    <button type="button" class="header-mobile__btn--close" ><img  src="./img/arrow-right.svg" alt="모바일 메뉴 닫기" ></button>
+                    <button type="button" class="mobile__btn--close" ><img  src="./img/arrow-right.svg" alt="모바일 메뉴 닫기" ></button>
                     <nav class="mobile__nav">
                         <ul>
-                            <li class=" header__menu-item--mobile"><a href="#home" aria-label="호두 랜딩 페이지로 이동">Home</a></li>
-                            <li class=" header__menu-item--mobile"><a href="#about" aria-label="호두 관한 페이지로 이동">About</a></li>
-                            <li class=" header__menu-item--mobile"><a href="#support" aria-label="호두 지원 페이지로 이동">Support</a></li>
-                            <li class=" header__menu-item--mobile"><a href="./file.pdf" aria-label="파일 다운로드" class="mobile-header__btn--download" download >Download</a></li>
+                            <li class="mobile__menu-item"><a href="#home" aria-label="호두 랜딩 페이지로 이동">Home</a></li>
+                            <li class="mobile__menu-item"><a href="#about" aria-label="호두에 관한 페이지로 이동">About</a></li>
+                            <li class="mobile__menu-item"><a href="#support" aria-label="호두 지원 페이지로 이동">Support</a></li>
+                            <li class="mobile__menu-item"><a href="./file.pdf" aria-label="파일 다운로드" class="mobile__btn--download" download >Download</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -109,7 +109,7 @@
                     <p  class="gallery__content text-multiline">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                         Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <a href="./#상세페이지" class="gallery__btn gallery__btn--more" aria-label="더보기 버튼">Learn More</a>
+                    <a href="#상세페이지" class="gallery__btn gallery__btn--more" aria-label="더보기 버튼">Learn More</a>
                 </div>
             </div>
         </section>
@@ -123,14 +123,14 @@
                 <form  action="/"  class="subscribe__form">
                     <fieldset>
                         <legend class="sr-only">이메일 구독 폼</legend>
-                        <img src="./img/mail.svg" alt="이메일 아이콘">
+                        <img src="./img/mail.svg" alt="이메일 아이콘" aria-hidden="true">
                         <label for="newsletter-email" class="sr-only">이메일 주소</label>
                         <input class="subscribe__email" type="email" name="newsletter" id="newsletter-email" placeholder="Enter your e-mail address"  required>
                         <button class="subscribe__btn--subscribe" type="submit">Subscribe</button>
                     </fieldset>
                 </form>
             </div>
-            <h2 class="sr-only">호두  백그라운드 사진</h2>
+            <h2 class="sr-only">호두 백그라운드 사진</h2>
             <div class="image"></div>
         </section>
     </main>
@@ -154,10 +154,10 @@
             </div>
             <nav class="footer__nav" aria-label="푸터 메뉴">
                 <ul class="footer__menu">
-                    <li><a href="#about" aria-label="호두 관한 페이지로 이동">About</a></li>
+                    <li><a href="#about" aria-label="호두에 관한 페이지로 이동">About</a></li>
                     <li><a href="#" aria-label="호두 블로그 페이지로 이동" >Blog</a></li>
                     <li><a href="#support" aria-label="호두 지원 페이지로 이동" >Support</a></li>
-                    <li><a href="#" aria-label="호두 이용관약 페이지로 이동" >Terms of Use</a></li>
+                    <li><a href="#" aria-label="호두 이용약관 페이지로 이동" >Terms of Use</a></li>
                 </ul>
             </nav>
         </div>
@@ -172,14 +172,18 @@
             </picture>
             <strong>Thank you!</strong>
             <p id="modal-desc">Lorem Ipsum is simply dummy text of the printing industry. </p>
-            <button type="button" aria-label="호두 좋아요 버튼">OK! I Lover HODU</button>
+            <button type="button" aria-label="호두 좋아요 버튼">OK! I Love HODU</button>
         </div>
     </dialog>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".mobile-toggle").addEventListener("click",function () {
-                document.querySelector(".mobile__nav-wrapper").classList.toggle("open");
+            document.querySelector(".mobile__nav-wrapper").classList.toggle("open");
         });
+        document.querySelector(".subscribe__btn--subscribe").addEventListener("click",function () {
+            document.querySelector(".modal").showModal();
+        });
+    
     });
 </script>
 </body>

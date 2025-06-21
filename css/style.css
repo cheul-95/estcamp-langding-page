@@ -120,18 +120,18 @@
     font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
     text-decoration: none;
 }
-.mobile__nav .mobile-header__btn--download {
+.mobile__nav .mobile__btn--download {
     background-color: #D97652;
     padding: 11px 24px;
     border-radius: 20px;
     color: white;
     display: inline-block;
 }
-.header__menu-item--mobile{
+.mobile__menu-item{
     margin-left:30px;
     height: 20px;
 }
-.header__menu-item--mobile:last-child{
+.mobile__menu-item:last-child{
     margin-left: 20px;
     margin-top: 30px;
 }

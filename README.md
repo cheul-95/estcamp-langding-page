@@ -2,7 +2,7 @@
 # 🐱 HODU 랜딩 페이지
 
 > 귀여운 고양이 "호두"를 테마로 한 정적 랜딩 페이지입니다.  
-> HTML과 CSS만으로 제작되었으며, GitHub Pages를 통해 배포되고 있습니다.
+> HTML과 CSS만으로 제작되었으며, GitHub Pages를 통해 배포됩니다.
 
 ## 🔗 데모 페이지
 
@@ -49,34 +49,42 @@ start index.html
 ## 🖼️ 미리보기
 
 ### 💻 데스크탑 화면
-![Desktop View](./img/landing-pc.png)
+![Desktop View](<img src="./img/landing-pc.png" alt="Desktop View" style="max-width:100%; height:auto;">)
 
 ### 📱 모바일 화면
-![Mobile View](./img/landing-mo.png)
+![Mobile View](<img src="./img/landing-mo.png" alt="Mobile View" style="max-width:100%; height:auto;">)
 
 ---
 
 ## 📌 주요 특징
 
-📌 주요 특징
-✅ 순수 HTML + CSS + JS 기반의 정적 웹사이트
-✅ 모바일 메뉴 토글 및 다이얼로그(모달) 기능
-✅ 반응형 디자인
-  Desktop: max-width: 1320px
-  Tablet: max-width: 1023px
-  Mobile: max-width: 768px
-  picture 및 source 태그를 활용한 이미지 최적화
-✅ 시맨틱 마크업
-  header, main, footer 구조 사용
-  각 섹션 제목에 h2 태그 활용
-✅ 접근성 향상 요소
-  fieldset, legend, label, aria-label, alt,aria-hidden 등을 적절히 활용
-✅ 검색엔진 최적화(SEO)
-  meta 태그: description, keywords, author 설정
-  향후 Open Graph 및 SNS 메타 태그 추가 예정
-✅ CSS 네이밍 방식
-  BEM(Block Element Modifier) 방식 적용
-  유지보수성과 코드 가독성 개선 
+[x] 순수 HTML + CSS + JS 기반의 정적 웹사이트
+[x] 모바일 메뉴 토글 및 다이얼로그(모달) 기능
+[x] 반응형 디자인
+  - Desktop: max-width: 1320px
+  - Tablet: max-width: 1023px
+  - Mobile: max-width: 768px
+  - picture 및 source 태그를 활용한 이미지 최적화
+[x] 시맨틱 마크업
+  - header, main, footer 레이아웃 구조 사용
+  - 각 섹션 제목에 h2 태그 활용
+  - sr-only
+[x] 접근성 향상 요소
+  - fieldset, legend, label, aria-label, alt,aria-hidden 등을 적절히 활용
+[x] 검색엔진 최적화(SEO)
+  - meta 태그: description, keywords, author 설정
+[x] CSS 네이밍 방식
+  - BEM(Block Element Modifier) 방식 적용
+  - 유지보수성과 코드 가독성 개선 
+
+---
+
+## 🔧 향후 작업 목록 리스트
+
+ - 모달 닫기 버튼에 이벤트 연결
+ - 헤더 이후 섹션에서 자연스럽게 스크롤 시작되도록 개선
+ - Open Graph 및 SNS 미리보기용 meta 태그 추가
+
 ---
 ## 🙋‍♀️ 제작자
 
