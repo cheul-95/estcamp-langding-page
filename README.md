@@ -48,31 +48,50 @@ start index.html
 
 ## 🖼️ 미리보기
 
-### 💻 데스크탑 화면
-![Desktop View](<img src="https://cheul-95.github.io/estcamp-langding-page/img/landing-pc.png" alt="Desktop View" style="max-width:100%; height:auto;">)
-
-### 📱 모바일 화면
-![Mobile View](<img src="https://cheul-95.github.io/estcamp-langding-page//img/landing-mo.png" alt="Mobile View" style="max-width:100%; height:auto;">)
+<table align="center">
+  <thead>
+    <tr>
+      <th align="center">💻 데스크탑 화면</th>
+      <th align="center">📱 모바일 화면</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <img src="./img/landing-pc.png" alt="Desktop View" width="400">
+      </td>
+      <td align="center" valign="top">
+        <img src="./img/landing-m.png" alt="Mobile View" width="250">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 ## 📌 주요 특징
 
 ✅ 순수 HTML + CSS + JS 기반의 정적 웹사이트
-✅모바일 메뉴 토글 및 다이얼로그(모달) 기능
+
+✅ 모바일 메뉴 토글 및 다이얼로그(모달) 기능
+
 ✅ 반응형 디자인
   - Desktop: max-width: 1320px
   - Tablet: max-width: 1023px
   - Mobile: max-width: 768px
-  - picture 및 source 태그를 활용한 이미지 최적화
-✅시맨틱 마크업
+  - picture , source 태그를 활용한 이미지 최적화
+    
+✅ 시맨틱 마크업
   - header, main, footer 레이아웃 구조 사용
   - 각 섹션 제목에 h2 태그 활용
   - sr-only
+
 ✅ 접근성 향상 요소
   - fieldset, legend, label, aria-label, alt,aria-hidden 등을 적절히 활용
+
 ✅ 검색엔진 최적화(SEO)
   - meta 태그: description, keywords, author 설정
+
 ✅ CSS 네이밍 방식
   - BEM(Block Element Modifier) 방식 적용
   - 유지보수성과 코드 가독성 개선 
