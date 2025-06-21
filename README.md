@@ -33,18 +33,6 @@ estcamp-langding-page/
 
 ---
 
-## 💻 로컬에서 실행하기
-
-1. 이 저장소를 클론하거나 zip으로 다운로드합니다.
-2. `index.html` 파일을 브라우저에서 직접 열면 됩니다.
-
-```
-git clone https://github.com/cheul-95/estcamp-langding-page.git
-cd estcamp-langding-page
-start index.html
-```
-
----
 ## 🖼️ 미리보기
 
 <table align="center">
@@ -70,7 +58,7 @@ start index.html
 
 ## 📌 주요 특징
 
-✅ 순수 HTML + CSS + JS 기반의 정적 웹사이트
+✅ HTML + CSS + JS 기반의 웹사이트
 
 ✅ 모바일 메뉴 토글 및 다이얼로그(모달) 기능
 
@@ -82,8 +70,7 @@ start index.html
     
 ✅ 시맨틱 마크업
   - header, main, footer 레이아웃 구조 사용
-  - 각 섹션 제목에 h2 태그 활용
-  - sr-only
+  - 각 섹션 제목에 h2 태그 활용 ,sr-only 숨김 처리
 
 ✅ 접근성 향상 요소
   - legend, label, aria-label, alt,aria-hidden 등을 적절히 활용
@@ -111,10 +98,8 @@ start index.html
 
 - h1의 img alt값 : 텍스트 이미지이거나 로고와 같이 기업, 브랜드 자체를 표현하는 경우에는 '로고'라는 텍스트는 생략 ( 반영 완료 )
 - 동일한 스타일을 사용하고 있어요. 이런 부분은 공통 스타일로 작성 ( 작업 예정 )
-- 태블릿 화면 UI 깨지는 부분 중단점 추가하면 좋을것같습니다. ( 반영 완료 )
-  MOBILE: 767px
-  TABLET: 1023px
-  PC: 1024px
+- 태블릿 화면 UI 깨지는 부분 중단점 추가하면 좋을것같습니다. ( 반영 완료 ) MOBILE: 767px, TABLET: 1023px,  PC: 1024px
+  
 ---
 
 ## 🔧 향후 작업 목록 리스트
