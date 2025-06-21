@@ -87,7 +87,7 @@ start index.html
   - sr-only
 
 ✅ 접근성 향상 요소
-  - fieldset, legend, label, aria-label, alt,aria-hidden 등을 적절히 활용
+  - legend, label, aria-label, alt,aria-hidden 등을 적절히 활용
 
 ✅ 검색엔진 최적화(SEO)
   - meta 태그: description, keywords, author 설정
