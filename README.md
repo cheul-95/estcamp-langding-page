@@ -3,6 +3,8 @@
 
 > 귀여운 고양이 "호두"를 테마로 한 정적 랜딩 페이지입니다.  
 
+---
+
 ## 🔗 데모 페이지
 
 👉 [호두 랜딩 페이지 바로가기](https://cheul-95.github.io/estcamp-langding-page/)
@@ -11,9 +13,7 @@
 
 ## 🛠️ 사용 기술
 
-- HTML5
-- CSS3
-- JavaScript (기본 DOM API)
+- HTML5 + CSS3 + JS
 
 ---
 
@@ -55,6 +55,52 @@ estcamp-langding-page/
 
 ---
 
+## 🔍 시맨틱 마크업 구조 및 특징
+
+<table>
+  <thead>
+    <tr>
+      <th>태그</th>
+      <th>적용 예시</th>
+      <th>장점</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code></td>
+      <td>페이지 기본 구조 분리</td>
+      <td>스크린 리더, SEO 최적화</td>
+    </tr>
+    <tr>
+      <td><code>&lt;section&gt;</code></td>
+      <td>banner / content / gallery / subscribe</td>
+      <td>정보 블록 논리적 구획</td>
+    </tr>
+     <tr>
+      <td><code>&lt;figure&gt;</code>, <code>&lt;figcaption&gt;</code></td>
+      <td>이미지 및 설명 문구를 하나의 의미 단위로 그룹화</td>
+      <td>시맨틱 구조 강화, 보조기술(스크린 리더) 지원 향상</td>
+    </tr>
+    <tr>
+      <td><code>&lt;fieldset&gt;</code>, <code>&lt;legend&gt;</code></td>
+      <td>입력 그룹 구분</td>
+      <td>확장성을 고려한 그룹화</td>
+    </tr>
+    <tr>
+      <td><code>&lt;picture&gt;</code>, <code>&lt;source&gt;</code></td>
+      <td>반응형 이미지 처리</td>
+      <td>다양한 해상도 대응</td>
+    </tr>
+    <tr>
+      <td><code>&lt;clamp&gt;</code></td>
+      <td>clamp( 최솟값 , calc((최댓값 / 화면크기) * 100vw),최댓값)</td>
+      <td>반응형 폰트 사이즈 대응</td>
+    </tr>
+    </tbody>
+</table>
+
+---
+
 ## 📌 주요 특징
 
 ✅ HTML + CSS + JS 기반의 웹사이트
@@ -65,15 +111,9 @@ estcamp-langding-page/
   - Desktop: max-width: 1320px
   - Tablet: max-width: 1023px
   - Mobile: max-width: 768px
-  - picture , source 태그를 활용한 이미지 최적화
-  - clamp( 최솟값 , calc((최댓값 / 화면크기) * 100vw),최댓값) 폰트 사이즈 최적화
     
-✅ 시맨틱 마크업
-  - header, main, footer 레이아웃 구조 사용
-  - 각 섹션 제목에 h2 태그 활용 ,sr-only 숨김 처리
-
 ✅ 접근성 향상 요소
-  - legend, label, aria-label, alt,aria-hidden 등을 적절히 활용
+  - label, aria-label, alt, aria-hidden 등을 적절히 활용
 
 ✅ 검색엔진 최적화(SEO)
   - meta 태그: description, keywords, author 설정
@@ -104,7 +144,7 @@ estcamp-langding-page/
 
 ## 🔧 향후 작업 목록 리스트
 
- - 모달 닫기 버튼에 이벤트 연결
+ - 모달 닫기 버튼에 추가
  - 두번째 섹션 부터 헤더 고정 시작되도록 개선
  - Open Graph 및 SNS 미리보기용 meta 태그 추가
  - 공통 스타일 작업
