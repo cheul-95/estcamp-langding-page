@@ -67,6 +67,7 @@ estcamp-langding-page/
   - Tablet: max-width: 1023px
   - Mobile: max-width: 768px
   - picture , source 태그를 활용한 이미지 최적화
+  - clamp( 최솟값 , calc((최댓값 / 화면크기) * 100vw),최댓값) 폰트 사이즈 최적화
     
 ✅ 시맨틱 마크업
   - header, main, footer 레이아웃 구조 사용
@@ -105,8 +106,9 @@ estcamp-langding-page/
 ## 🔧 향후 작업 목록 리스트
 
  - 모달 닫기 버튼에 이벤트 연결
- - 헤더 이후 섹션에서 자연스럽게 스크롤 시작되도록 개선
+ - 두번째 섹션 부터 헤더 고정 시작되도록 개선
  - Open Graph 및 SNS 미리보기용 meta 태그 추가
+ - 공통 스타일 작업
 
 ---
 ## 🙋‍♀️ 제작자
