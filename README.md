@@ -82,11 +82,6 @@ estcamp-langding-page/
       <td>시맨틱 구조 강화, 보조기술(스크린 리더) 지원 향상</td>
     </tr>
     <tr>
-      <td><code>&lt;fieldset&gt;</code>, <code>&lt;legend&gt;</code></td>
-      <td>입력 그룹 구분</td>
-      <td>확장성을 고려한 그룹화</td>
-    </tr>
-    <tr>
       <td><code>&lt;picture&gt;</code>, <code>&lt;source&gt;</code></td>
       <td>반응형 이미지 처리</td>
       <td>다양한 해상도 대응</td>

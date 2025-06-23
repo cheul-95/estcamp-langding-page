@@ -566,6 +566,7 @@ footer{
     }
     .gallery__cards-wrap{
         overflow: hidden;
+        position: relative;
     }
     .gallery__cards{
         max-width: calc(100%);
